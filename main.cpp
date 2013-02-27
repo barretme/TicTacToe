@@ -1,5 +1,6 @@
 /* main.cpp */
 #include <iostream>
+#include "CGamePlay.h"
 using namespace std;
 
 /* possible outcomes */
@@ -13,7 +14,7 @@ int main()
 	int numberWins[sizeof(outcomes)] = {0};
 
 	/* whether or not player will play or quit after completed game */
-	bool playAgain = false;
+	bool done = false;
 
 	while (!done) {
 		cout << "Begin!" << endl;
